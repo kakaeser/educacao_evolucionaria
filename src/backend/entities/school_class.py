@@ -2,10 +2,8 @@ from sqlalchemy import Column, String, Integer
 from config.base import Base
 from sqlalchemy.orm import relationship
 
-class Subject(Base):
-    __tablename__ = "subjects"
+class SchoolClass(Base):
+    __tablename__ = "classes"
 
     id = Column(Integer, primary_key=True)
-    sub_name = Column(String)
-
-    grades = relationship("Grade", back_populates="subject")
+    class_name = Column(String)

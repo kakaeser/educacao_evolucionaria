@@ -1,5 +1,5 @@
 from sqlalchemy import Column, String, Integer, ForeignKey
-from backend.config.base import Base
+from config.base import Base
 from sqlalchemy.orm import relationship
 
 class Grade(Base):

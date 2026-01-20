@@ -1,5 +1,5 @@
 from sqlalchemy import Column, String, Integer
-from backend.config.base import Base
+from config.base import Base
 
 class Term(Base):
     __tablename__ = "terms"
